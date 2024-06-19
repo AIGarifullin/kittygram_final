@@ -1,6 +1,4 @@
 # Проект Kittygram final 
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
-https://github.com/OWNER/REPOSITORY/actions/workflows/WORKFLOW-FILE/badge.svg
 ![workflow](https://github.com/AIGarifullin/kittygram_final/actions/workflows/main.yml/badge.svg)
 
 ## Описание проекта

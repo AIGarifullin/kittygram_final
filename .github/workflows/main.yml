@@ -124,9 +124,7 @@ jobs:
       - build_frontend_and_push_to_docker_hub
       - build_gateway_and_push_to_docker_hub
     if: 
-      contains('
-        refs/heads/main
-        ', github.ref)
+      contains('refs/heads/main', github.ref)
     steps:
     - name: Checkout repo
       uses: actions/checkout@v3
