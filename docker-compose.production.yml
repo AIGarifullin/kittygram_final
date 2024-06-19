@@ -11,6 +11,7 @@ services:
     env_file: .env
     volumes:
       - pg_data_production:/var/lib/postgresql/data
+  
   backend:
     image: aig3c/kittygram_backend
     env_file: .env
@@ -19,12 +20,14 @@ services:
       - media_production:/app/media
     depends_on:
       - db
+  
   frontend:
     env_file: .env
     image: aig3c/kittygram_frontend
     command: cp -r /app/build/. /frontend_static/
     volumes:
       - static_volume:/frontend_static
+  
   gateway:
     image: aig3c/kittygram_gateway
     env_file: .env
